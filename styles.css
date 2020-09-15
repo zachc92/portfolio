@@ -1,4 +1,7 @@
+/* Main Color */
 /* #0be881 */
+
+/* General */
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
@@ -23,8 +26,21 @@ hr {
     box-shadow: 1px 1px 1px 1px rgb(245, 245, 245);
 }
 
+.break {
+    width: 80%;
+    margin:  150px auto;
+    text-align: center;
+}
+
+.transition-one {
+    font-weight: 300;
+}
+
+/* Nav */
+
 .top-row {
     display: flex;
+    justify-content: space-between;
     margin: auto;
     vertical-align: middle;
 }
@@ -34,23 +50,10 @@ hr {
 }
 
 .nav-links {
-    width: 80%;
-    margin-left: 80%;
+    margin-right: 1%;
     display: flex;
     align-items: center;
     justify-content: right;
-}
-
-.heading {
-    display: block;
-    margin-top: 250px;
-    text-align: center;
-}
-
-.break {
-    width: 80%;
-    margin:  150px auto;
-    text-align: center;
 }
 
 .logo {
@@ -67,21 +70,30 @@ hr {
     padding: 10px;
     width: 100px;
     height: 50px;
+    outline: none;
 }
 
 .email:hover {
     color: white;
     background-color: #0be881;
+    cursor: pointer;
+}
+
+/*  */
+/* Header */
+/*  */
+
+.heading {
+    display: block;
+    margin-top: 250px;
+    text-align: center;
 }
 
 #subtitle {
     font-weight: 300;
 }
 
-.transition-one {
-    font-weight: 300;
-}
-
+/* Introduction */
 
 .first-section {
     margin: 125px auto;
@@ -101,6 +113,10 @@ hr {
     line-height: 2;
 }
 
+/*  */
+/* Skills */
+/*  */
+
 .second-section {
     display: flex;
     flex-direction: row;
@@ -117,6 +133,7 @@ hr {
 
     .skills {
         margin-top: 120px;
+        width: 750px;
     }
 }
 
@@ -149,7 +166,9 @@ hr {
 }
 
 .skills-body {
+    margin: auto;
     border-top: 1px solid #d6d6d6;
+    width: 70%;
 }
 
 .skills-body h3 {
@@ -159,4 +178,78 @@ hr {
 
 .skills-body p {
     color: white;
+    line-height: 2;
+}
+
+/*  */
+/* Projects */
+/*  */
+
+.third-section {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.project {
+    width: 30%;
+    height: 250px;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: 2.5% 5% 2.5% 5%;
+}
+
+.project-description {
+    display: none;
+    transition: display 2s;
+    background-color: #808e9b;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-description h3 {
+    margin-top: 0;
+    padding-top: 75px;
+    line-height: 2;
+    color: white;
+}
+
+.project-visit {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #0be881;
+    color: #0be881;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+}
+
+.project-visit a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-visit:hover {
+    background-color: #0be881;
+    color: white;
+    cursor: pointer;
+}
+
+#project-one {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./img/ror2.jpg);
+    background-position: center;
+}
+
+#project-two {
+    background-image: url(./img/expensify.jpg);
+    background-position: center;
 }
