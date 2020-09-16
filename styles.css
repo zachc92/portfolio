@@ -52,6 +52,7 @@ hr {
 .nav-links {
     margin-right: 1%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: right;
 }
@@ -109,6 +110,12 @@ hr {
     margin: auto;
 }
 
+@media (max-width: 500px) {
+    .intro {
+        width: 75%;
+    }
+}
+
 .intro p {
     line-height: 2;
 }
@@ -119,31 +126,37 @@ hr {
 
 .second-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     text-align: center;
 }
 
-@media (max-width: 1517px) {
-    .second-section {
-        flex-direction: column;
-    }
-
-    .skills {
-        margin-top: 120px;
-        width: 750px;
-    }
-}
-
 .skills {
-    width: 500px;
+    width: 90%;
     margin-bottom: 50px;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #525252;
     background-color: #0be881;
+}
+
+@media (min-width: 500px) and (max-width: 1522px) {
+    .skills {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1523px) {
+    .second-section {
+        flex-direction: row;
+    }
+
+    .skills {
+        margin-top: 120px;
+        width: 500px;
+    }
 }
 
 .skills-header {
@@ -252,4 +265,10 @@ hr {
 #project-two {
     background-image: url(./img/expensify.jpg);
     background-position: center;
+}
+
+#project-three {
+    background-image: url(./img/prod.jpg);
+    background-position: center;
+    background-size: cover;
 }
