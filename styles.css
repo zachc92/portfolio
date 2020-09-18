@@ -47,6 +47,8 @@ hr {
 
 .nav-logo {
     width: 20%;
+    height: auto;
+    padding: 10px;
 }
 
 .nav-links {
